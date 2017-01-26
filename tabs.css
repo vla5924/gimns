@@ -7,7 +7,7 @@
 /* Стили секций с содержанием */
 section {
   display: none;
-  /* padding: 15px; */
+  padding: 15px;
   background: #fff;
   /* border: 1px solid #ddd;*/
 }
@@ -21,7 +21,7 @@ section {
   padding: 10px 0px;
   text-align: center;
   text-transform: uppercase;
-  width: 30%;
+  width: 31%;
   font-size: 18px;
   /*box-sizing: border-box;*/
   color: #55adf5;
