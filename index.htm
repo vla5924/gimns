@@ -4,6 +4,7 @@
 <title>Gimns VK App</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link href="/style.css" rel="StyleSheet">
+<link href="/tabs.css" rel="StyleSheet">
   <!-- Put this script tag to the <head> of your page -->
 <script type="text/javascript" src="//vk.com/js/api/openapi.js?137"></script>
 <script type="text/javascript">
@@ -11,13 +12,40 @@
 </script>
 </head>
 <body style="font-family:'Arial'">
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 363610, {tooltipButtonText: "Есть вопрос?"});
+</script>
+  
+<!---------->
+  <div class="blockr tabs_block">  
+ <!-- <bt> -->  
+ <!--<s5441>-->  
+ <!--</s>-->  
+ <!-- </bt> -->  
+ <div class="tabs">  
+ <input id="tab1" type="radio" name="tabs" checked>  
+ <label for="tab1" title="Wordpress">Чат</label>  
+
+ <input id="tab2" type="radio" name="tabs">  
+ <label for="tab2" title="Windows">Опросы</label>  
+
+ <input id="tab3" type="radio" name="tabs">  
+ <label for="tab3" title="HTML5">Разное</label>  
+
+  <section id="content1">  
 <div style="font-size:20px" align="center">Общегимназический чат</div><br>
   <!-- Put this div tag to the place, where the Comments block will be -->
 <div id="vk_comments"></div>
 <script type="text/javascript">
 VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
-</script> 
-  <br><br>
+</script>  
+  </section> 
+  <section id="content2">  
+ Информер 2  
+  </section> 
+  <section id="content3">  
 <div style="font-size:20px" align="center">Предложить новость</div>
 <br><!-- VK Widget -->
 <div id="vk_contact_us"></div>
@@ -30,11 +58,9 @@ VK.Widgets.ContactUs("vk_contact_us", {text: "Предложить новост�
 <script type="text/javascript">
 VK.Widgets.Like("vk_like", {type: "full", height: 18});
 </script>
-
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-VK.Widgets.CommunityMessages("vk_community_messages", 363610, {tooltipButtonText: "Есть вопрос?"});
-</script>
+  </section> 
+  </div>  
+  </div>
+<!---------->
 </body>
 </html>
