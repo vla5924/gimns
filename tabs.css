@@ -17,6 +17,7 @@ section {
 /* Стили вкладок (табов) */
 .tabs label {
   display: inline-block;
+  border: #55adf5 1px solid;
   padding: 10px 0px;
   text-align: center;
   text-transform: uppercase;
