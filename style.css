@@ -1,0 +1,7 @@
+body {font-family:'Arial'}
+header {text-align:center;font-size:17px}
+header p {font-size:25px}
+main p .description {font-size:12px}
+main ul {font-size:14px}
+main ul a {font-weight:bold}
+footer {font-size:11px;text-align:center;font-weight:italic}
