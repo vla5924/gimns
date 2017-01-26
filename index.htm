@@ -25,7 +25,6 @@
  <label for="tab3" title="HTML5"><i class="fa fa-th-list" aria-hidden="true"></i> Разное</label>  
 
   <section id="content1">  
-<div style="font-size:20px" align="center">Общегимназический чат</div><br>
   <!-- Put this div tag to the place, where the Comments block will be -->
 <div id="vk_comments"></div>
 <script type="text/javascript">
@@ -33,18 +32,21 @@ VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
 </script>  
   </section> 
   <section id="content2">  
- Информер 2  
-  </section> 
+ <ul>
+   <li><a href="//bit.ly/pulsar4" target="_blank">Про "ПУЛЬСАР"</a></li>
+ </ul>
+  </section>
   <section id="content3">  
-<div style="font-size:20px" align="center">Предложить новость</div>
+<div style="font-size:20px" align="center">Хотите предложить новость?</div>
 <br><!-- VK Widget -->
-<div id="vk_contact_us"></div>
+<div align="center" style="text-align:center"><div id="vk_contact_us"></div></div>
 <script type="text/javascript">
 VK.Widgets.ContactUs("vk_contact_us", {text: "Предложить новость", height: 30}, -363610);
-</script><br><br><br>
+</script><br><br>
+ 
   Понравилось приложение Гимназия Плюс?
   <!-- Put this div tag to the place, where the Like block will be -->
-<div id="vk_like"></div>
+<div align="center" style="text-align:center"><div id="vk_like"></div></div>
 <script type="text/javascript">
 VK.Widgets.Like("vk_like", {type: "full", height: 18});
 </script>
@@ -54,7 +56,7 @@ VK.Widgets.Like("vk_like", {type: "full", height: 18});
 <!-- VK Widget -->
 <div id="vk_community_messages"></div>
 <script type="text/javascript">
-VK.Widgets.CommunityMessages("vk_community_messages", 363610, {tooltipButtonText: "Есть вопрос?"});
+VK.Widgets.CommunityMessages("vk_community_messages", 363610, {});
 </script>
 </body>
 </html>
