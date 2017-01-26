@@ -23,13 +23,13 @@ section {
   width: 30%;
   font-size: 18px;
   /*box-sizing: border-box;*/
-  color: #2e3337;
+  color: #55adf5;
   background: white;
   line-height: 22px;
 }
 /* изменения стиля заголовков вкладок при наведении */
 .tabs label:hover {
-  color: #55adf5;
+  color: #0d7dd9;
   cursor: pointer;
 }
 /* стили для активной вкладки */
