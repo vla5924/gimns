@@ -17,11 +17,9 @@ section {
 .tabs label {
   display: inline-block;
   padding: 10px 0px;
-   
   text-align: center;
   text-transform: uppercase;
-  width: 33%;
-  min-width:50px;
+  width: 25%;
   font-size: 18px;
   /*box-sizing: border-box;*/
   color: #2e3337;
