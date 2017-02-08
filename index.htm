@@ -31,7 +31,7 @@
 function getfact 
 {
   $('#fact2').html('<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>');
-  $.get('http://vla5924.github.io/gimns/facts-rotator.htm',function(d){  
+  $.get('https://vla5924.github.io/gimns/facts-rotator.htm',function(d){  
     var o=$('div.fact',d),i=Math.floor(Math.random()*o.length);  
     $('#fact2').after($('<div id="fact2"/>').html(o.eq(i)));  
   });  
