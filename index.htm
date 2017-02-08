@@ -26,8 +26,8 @@
  <label for="tab3" title="Разное"><i class="fa fa-th-list" aria-hidden="true"></i> Разное</label>  
 
   <section id="content1">  
-<button onclick="getfact()">Показать случайный факт</button>
-<div id="facty">
+<button onclick="getfact()">Показать случайный факт</button><br>
+<div id="facty"><big>Знаете ли вы, что...</big>
   <div id="facti"></div>
 </div>
  
@@ -52,7 +52,10 @@
 <div class="advCont">Традиции гимназии: «Посвящение в гимназисты», «День самоуправления», «Академические чтения», «Гимназист года», «Виват, гимназия!» и замечательная традиция – исполнение гимна гимназии!</div>
 </div>  
 <script type="text/javascript">  
-$('#facti').after($('#advertisement div.advCont:eq('+Math.floor(Math.random()*5)+')').css('display','block'));  
+function getfact () 
+{
+  $('#facti').after($('#advertisement div.advCont:eq('+Math.floor(Math.random()*5)+')').css('display','block'));  
+};
 </script>
   </section> 
   <section id="content2">  
