@@ -16,27 +16,40 @@
   <div class="blockr tabs_block">  
  <div class="tabs">  
  <input id="tab1" type="radio" name="tabs" checked>  
- <label for="tab1" title="Wordpress"><i class="fa fa-comments" aria-hidden="true"></i> Чат</label>  
+ <label for="tab1" title="Факты"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Факты</label>  
 
  <input id="tab2" type="radio" name="tabs">  
- <label for="tab2" title="Windows"><i class="fa fa-bar-chart" aria-hidden="true"></i> Опросы</label>  
+ <label for="tab2" title="Чат"><i class="fa fa-comments" aria-hidden="true"></i> Чат</label>  
 
  <input id="tab3" type="radio" name="tabs">  
- <label for="tab3" title="HTML5"><i class="fa fa-th-list" aria-hidden="true"></i> Разное</label>  
+ <label for="tab3" title="Разное"><i class="fa fa-th-list" aria-hidden="true"></i> Разное</label>  
 
   <section id="content1">  
+<button onclick="getfact()">Показать случайный факт</button>
+<div id="fact2"></div>
+<script type="text/javascript">  
+function getfact 
+{
+  $('#fact2').html('<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>');
+  $.get('http://vla5924.github.io/gimns/facts-rotator.htm',function(d){  
+    var o=$('div.fact',d),i=Math.floor(Math.random()*o.length);  
+    $('#fact2').html($('<div id="fact"/>').html(o.eq(i)));  
+  });  
+};
+</script>
+  </section> 
+  <section id="content2">  
   <!-- Put this div tag to the place, where the Comments block will be -->
 <div id="vk_comments"></div>
 <script type="text/javascript">
 VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
 </script>  
-  </section> 
-  <section id="content2">  
+  </section>
+  <section id="content3">  
  <ul>
    <li><a href="//bit.ly/pulsar4" target="_blank">Про "ПУЛЬСАР"</a></li>
  </ul>
-  </section>
-  <section id="content3">  
+<hr>
 <div style="font-size:20px" align="center">Хотите предложить новость?</div>
 <br><!-- VK Widget -->
 <div align="center" style="text-align:center"><div id="vk_contact_us"></div></div>
