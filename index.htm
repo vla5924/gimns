@@ -27,7 +27,7 @@
 
   <section id="content1">  
 <button onclick="getfact()">Показать случайный факт</button><br>
-<div id="facty">
+<div id="facty"><big>Знаете ли вы, что...</big><div id="facti"></div>
 </div>
  
 <div id="advertisement" style="display:none;">  
@@ -53,8 +53,7 @@
 <script type="text/javascript">  
 function getfact () 
 {
-  $('#facts').html('<big>Знаете ли вы, что...</big><div id="facti"></div>');
-  $('#facti').after($('#advertisement div.advCont:eq('+Math.floor(Math.random()*5)+')').css('display','block'));  
+  $('#facti').html($('#advertisement div.advCont:eq('+Math.floor(Math.random()*5)+')').css('display','block'));  
 };
 </script>
   </section> 
