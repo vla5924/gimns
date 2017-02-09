@@ -26,6 +26,7 @@
  <label for="tab3" title="Разное"><i class="fa fa-th-list" aria-hidden="true"></i> Разное</label>  
 
   <section id="content1">  
+<!--
 <div id="allEntries">Временно недоступно
 <div class="eBlock"></div>
 </div>
@@ -38,7 +39,8 @@ $.get('/gimns/facts-rotator/index.htm',function(d)
  }
 );  
 </script>
-<!--<button onclick="getfact()">Показать случайный факт</button><br>
+-->
+<button onclick="getfact()">Показать случайный факт</button><br>
 <div id="facty"><big>Знаете ли вы, что...</big><div id="facti"></div>
 </div>
 <div id="advertisement" style="display:none;">  
@@ -67,7 +69,7 @@ function getfact ()
   $('#facti').html($('#advertisement div.advCont:eq('+Math.floor(Math.random()*5)+')').css('display','block'));  
 };
 </script>
--->
+
   </section> 
   <section id="content2">  
   <!-- Put this div tag to the place, where the Comments block will be -->
