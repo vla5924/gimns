@@ -30,10 +30,13 @@
 <div class="eBlock"></div>
 </div>
 <script type="text/javascript">  
-$.get('/gimns/facts-rotator/',function(d){  
-  var o=$('div.advertisement',d),i=Math.floor(Math.random()*o.length);  
+$.get('/gimns/facts-rotator/index.htm',function(d)
+ {  
+  var o=$('div.advertisement',d),
+      i=Math.floor(Math.random()*o.length);  
   $('#allEntries .eBlock').after($('<div id="advertisement"/>').html(o.eq(i)));  
-});  
+ }
+);  
 </script>
 <!--<button onclick="getfact()">Показать случайный факт</button><br>
 <div id="facty"><big>Знаете ли вы, что...</big><div id="facti"></div>
